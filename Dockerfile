@@ -1,6 +1,6 @@
 FROM node:16 AS ui-build
 WORKDIR /usr/src/app
-COPY api/package*.json ./api/
+COPY api/* ./api/
 RUN cd api && npm install
 COPY api/server.js ./api/
 
