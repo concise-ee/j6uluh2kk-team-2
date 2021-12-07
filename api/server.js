@@ -16,13 +16,17 @@ const users = [];
 //     isItChristmasYet: false
 //   });
 // });
-app.use('/js', express.static(__dirname + '/js'));
-app.use('/img', express.static(__dirname + '/img'));
+// app.get('/js', express.static(__dirname + '/js'));
+// app.get('/img', express.static(__dirname + '/img'));
 
 app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
 
+
+app.get('/img/cat.svg', (req,res) => {
+    res.sendFile(path.join(__dirname, './img/cat.svg'));
+});
 
 
 app.listen(port, () => {
