@@ -22,11 +22,12 @@ const users = [];
 app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, './index.html'));
 });
-
-
-app.get('/img/cat.svg', (req,res) => {
-    res.sendFile(path.join(__dirname, './img/cat.svg'));
-});
+app.use(express.static('js'));
+app.use(express.static('img'));
+//
+// app.get('/img/cat.svg', (req,res) => {
+//     res.sendFile(path.join(__dirname, './img/cat.svg'));
+// });
 
 
 app.listen(port, () => {
