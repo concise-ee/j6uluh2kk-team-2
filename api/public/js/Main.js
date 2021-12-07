@@ -286,7 +286,7 @@ function createBall (x, y) {
         */
         var img = new Image;
         img.onload = function () { graphics.drawImage(img, 0, 0, xsize, ysize); };
-        img.src = './img/cat.png';
+        img.src = './img/aaa.png';
         
     }
     
