@@ -1,0 +1,27 @@
+
+body {
+    overflow: hidden;
+    background-color: #000000;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+
+    background-image: url('../img/image.png');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#info{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+    padding: 16px 24px;
+    color:#333;
+    font-size:10px;
+    font-family: helvetica;
+}
