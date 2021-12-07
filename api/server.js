@@ -8,7 +8,7 @@ const app = express(),
 const users = [];
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../my-app/out')));
+app.use(express.static(path.join(__dirname, './')));
 
 app.get('/api/christmas', (req, res) => {
   console.log('merry called!')
@@ -18,7 +18,7 @@ app.get('/api/christmas', (req, res) => {
 });
 
 app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, '../my-app/out/index.html'));
+  res.sendFile(path.join(__dirname, './index.html'));
 });
 
 app.listen(port, () => {
